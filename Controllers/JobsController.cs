@@ -25,6 +25,29 @@ namespace SabrinaRoleApp.Controllers
             return View(await _context.Jobs.ToListAsync());
         }
 
+        // GET: Jobs/RelatedJobs/5
+        [HttpGet]
+        public IActionResult RelatedJobs(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var selectedJob = _context.Jobs.Find(id);
+
+            if (selectedJob == null)
+            {
+                return NotFound();
+            }
+
+            var relatedJobs = _context.Jobs
+                .Where(j => j.NextJobs == selectedJob.NextJobs && j.Id != selectedJob.Id)
+                .ToList();
+
+            return PartialView("_RelatedJobsPartial", relatedJobs);
+        }
+
         // GET: Jobs/Details/5
         public async Task<IActionResult> Details(int? id)
         {
@@ -54,7 +77,7 @@ namespace SabrinaRoleApp.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Title,Description,Tier,IsActive")] Job job)
+        public async Task<IActionResult> Create([Bind("Id,Title,Description,Category,Tier,IsActive")] Job job)
         {
             if (ModelState.IsValid)
             {
@@ -86,7 +109,7 @@ namespace SabrinaRoleApp.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Title,Description,Tier,IsActive")] Job job)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Title,Description,Category,Tier,IsActive")] Job job)
         {
             if (id != job.Id)
             {

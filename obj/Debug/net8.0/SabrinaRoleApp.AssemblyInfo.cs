@@ -16,7 +16,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SabrinaRoleApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+65aceda509622d2feca2ec3ae301077e0c489447")]
 [assembly: System.Reflection.AssemblyProductAttribute("SabrinaRoleApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SabrinaRoleApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

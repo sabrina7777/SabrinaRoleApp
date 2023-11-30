@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\sabri\\Documents\\Projects\\SabrinaRoleApp\\SabrinaRoleApp\\SabrinaRoleApp.csproj": {}
+    "C:\\Users\\sabri\\Documents\\Projects\\SabrinaRoleAppGit\\SabrinaRoleApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\sabri\\Documents\\Projects\\SabrinaRoleApp\\SabrinaRoleApp\\SabrinaRoleApp.csproj": {
+    "C:\\Users\\sabri\\Documents\\Projects\\SabrinaRoleAppGit\\SabrinaRoleApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\sabri\\Documents\\Projects\\SabrinaRoleApp\\SabrinaRoleApp\\SabrinaRoleApp.csproj",
+        "projectUniqueName": "C:\\Users\\sabri\\Documents\\Projects\\SabrinaRoleAppGit\\SabrinaRoleApp.csproj",
         "projectName": "SabrinaRoleApp",
-        "projectPath": "C:\\Users\\sabri\\Documents\\Projects\\SabrinaRoleApp\\SabrinaRoleApp\\SabrinaRoleApp.csproj",
+        "projectPath": "C:\\Users\\sabri\\Documents\\Projects\\SabrinaRoleAppGit\\SabrinaRoleApp.csproj",
         "packagesPath": "C:\\Users\\sabri\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\sabri\\Documents\\Projects\\SabrinaRoleApp\\SabrinaRoleApp\\obj\\",
+        "outputPath": "C:\\Users\\sabri\\Documents\\Projects\\SabrinaRoleAppGit\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\sabri\\AppData\\Roaming\\NuGet\\NuGet.Config",

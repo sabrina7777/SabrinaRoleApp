@@ -9,15 +9,20 @@ namespace SabrinaRoleApp.Models
 
         public string? Title { get; set; }
         public string? Description { get; set; }
+
+        public string? Category { get; set; }
         public int? Tier { get; set; }
         public bool IsActive { get; set; }
 
         // Navigation property for the Users table
-        public ICollection<User> Users { get; set; }
+        public ICollection<User> Users { get; set; } = new List<User>();
 
-        //public ICollection<JobLink> NextJobLinks { get; set; }
+        public ICollection<Job> NextJobs { get; set; } = new List<Job>();
+        public string GetNextJobsAsString()
+        {
+            return string.Join(", ", NextJobs.Select(nj => nj.Title));
+        }
 
-        public ICollection<Job> NextJobs { get; set; }
 
         public Job()
         {

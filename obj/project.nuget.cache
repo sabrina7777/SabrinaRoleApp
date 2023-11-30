@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ABQhL7iQCE4DII+alLmxY4h7K3AZz5kvJE+MxNEQBH7MZXS+ldMdVXF7MatVwj9V2VDoOb2R8m2LC1Z6JQjQog==",
+  "dgSpecHash": "uVr2ldThkNfddKNaTygXK9IfsRgLxrk6/bvd26i70A3i7XPcZgBVfGrnwiwi8GrVQ1KU19q5oIBUcp2nHnXkJw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\sabri\\Documents\\Projects\\SabrinaRoleApp\\SabrinaRoleApp\\SabrinaRoleApp.csproj",
+  "projectFilePath": "C:\\Users\\sabri\\Documents\\Projects\\SabrinaRoleAppGit\\SabrinaRoleApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\sabri\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\sabri\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",
