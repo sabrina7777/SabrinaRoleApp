@@ -22,6 +22,15 @@ namespace SabrinaRoleApp
 
             var app = builder.Build();
 
+            //SeedData
+
+            using (var scope = app.Services.CreateScope())
+            {
+                var services = scope.ServiceProvider;
+
+                SeedData.Initialize(services.GetRequiredService<ApplicationDbContext>());
+            }
+
             // Configure the HTTP request pipeline.
             if (app.Environment.IsDevelopment())
             {
